@@ -265,4 +265,5 @@ class LE_Trail_Map_Update_Activator {
 
 		dbDelta($stmt);
 	}
+
 }

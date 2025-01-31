@@ -100,4 +100,20 @@ class LE_Trail_Map_Update_Admin {
 
 	}
 
+	public function create_settings_menu_item(): void {
+
+		add_action('admin_menu', function(){
+			add_menu_page(
+				'LE Maps',
+				'LE Maps Options',
+				'manage_options',
+				'le-maps',
+				[$this, ''],
+				''
+				
+			);
+		});
+
+	}
+
 }

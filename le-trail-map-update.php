@@ -75,6 +75,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-le-trail-map-update.php';
 function run_LE_Trail_Map_Update() {
 
 	$plugin = new LE_Trail_Map_Update();
+	
 	$plugin->run();
 
 }
