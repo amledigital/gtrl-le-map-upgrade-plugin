@@ -22,10 +22,21 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Plugin_Name
+ * @package    LE_Trail_Map_Update
  */
 
 // If uninstall not called from WordPress, then exit.
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
+
+
+// Include the uninstaller class if it's not already included
+if (!class_exists('LE_Trail_Map_Update_Uninstaller')) {
+    require_once plugin_dir_path(__FILE__) . 'includes/class-le-trail-map-update-uninstaller.php';
+}
+
+// Call the uninstall method
+LE_Trail_Map_Update_Uninstaller::uninstall();
+
+

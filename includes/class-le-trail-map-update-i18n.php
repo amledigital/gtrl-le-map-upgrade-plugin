@@ -9,8 +9,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @package    LE_Trail_Map_Update
+ * @subpackage LE_Trail_Map_Update/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @package    LE_Trail_Map_Update
+ * @subpackage LE_Trail_Map_Update/includes
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_i18n {
+class LE_Trail_Map_Update_i18n {
 
 
 	/**
@@ -35,7 +35,7 @@ class Plugin_Name_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'plugin-name',
+			'le-trail-map-update',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);
